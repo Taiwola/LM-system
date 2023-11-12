@@ -1,0 +1,32 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 25px;
+}
+
+.section h1 {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.acct {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 30px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: brown;
+    color: white;
+    border-radius: 5px;
+    transition: .5s ease;
+}
+
+.btn:hover {
+    color: black;
+}

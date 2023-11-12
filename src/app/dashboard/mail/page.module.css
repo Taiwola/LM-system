@@ -1,0 +1,42 @@
+.section {
+    margin-block-start: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_control {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form_control h1 {
+    font-size: 1.5rem;
+    margin-block-end: 30px;
+}
+
+.form_input {
+    padding: 10px 30px;
+    outline: 2px solid #F2FFE9;
+    border-radius: 5%;
+    transition: .5s ease;
+}
+
+.form_input:hover {
+    box-shadow: 0px 4px 6px 0px rgba(115, 129, 129, 0.75);
+}
+
+.form_control button {
+    border: 1px solid #F1EAFF;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: #F2FFE9;
+    transition: 0.5s ease;
+}
+
+.form_control button:hover {
+    background-color: black;
+    color: white;
+}

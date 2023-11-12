@@ -1,0 +1,38 @@
+.appr {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-inline: 10px;
+}
+
+.btn {
+    display: flex;
+    gap: 5px;
+}
+
+
+.btn button:nth-child(2) {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 6px 30px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn button:nth-child(1) {
+    background-color: #ce2727; /* Green */
+    border: none;
+    color: white;
+    padding: 6px 30px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 18px;
+}
