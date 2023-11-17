@@ -40,6 +40,10 @@
 
 .header_img {
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .img {

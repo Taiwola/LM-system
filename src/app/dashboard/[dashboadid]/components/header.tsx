@@ -10,10 +10,16 @@ type Prop = {
 }
 
 export default function Header({toggle, menu, close}: Prop) {
+
+  async function getUsername() {
+    
+  }
+
   return (
     <header className={styles.header}>
         <div className={styles.header_container}>
             <div className={styles.header_img}>
+              <p>NAME</p>
             <Image src="/image/background.png"  alt="..." width={50} height={40} priority={true} className={styles.img}/>
             </div>
             <Link href="#" className={styles.header_logo}>
