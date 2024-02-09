@@ -33,6 +33,11 @@ export default function RegisterForm() {
 
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+
+        if (data.password !== data.confirm_password) {
+            alert("password does not match")
+        }
+
         const res = await fetch('http://localhost:3000/api/register', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},

@@ -1,12 +1,12 @@
 .leave {
-    padding: 90px 0;
+    padding-top: 20px;
     width: 100%;
+    background-color: #f4f4f4;
+    height: 150vh;
 }
 
 
 .section {
-    background-color: linear-gradient(to bottom,  #F2FFE9, #F1EAFF);
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,9 +24,13 @@
 }
 
 .form_control {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
     gap: 20px;
+}
+
+.form_control > :nth-child(3) {
+  grid-column: span 2; /* Span two columns */
 }
 
 .form_input input {

@@ -1,0 +1,38 @@
+.container {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 10px;
+    background-color: #f4f4f4;
+    height: 100vh;
+  }
+  
+  .leave_container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .leave_title {
+    color: #333;
+    text-align: center;
+  }
+  
+  .officer_details {
+    margin-top: 20px;
+  }
+  
+  .acceptance_details {
+    margin-top: 20px;
+  }
+  
+  .acceptance_letter {
+    margin-top: 20px;
+  }
+  
+  .acceptance_letter p {
+    margin-bottom: 10px;
+  }
+  

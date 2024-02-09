@@ -1,0 +1,70 @@
+/* Style the form container div */
+.form_wrapper {
+    max-width: 800px; /* Adjust the max-width as needed */
+    margin: 20px auto; /* Center the form wrapper on the page with top and bottom margin */
+    padding: 20px; /* Add padding to the form wrapper */
+    border: 1px solid #ddd; /* Add a border for better visual separation */
+    border-radius: 8px; /* Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+    background-color: #fff; /* Set a background color */
+}
+
+/* Optional: Add a title or additional styling for the form wrapper */
+.form_wrapper h2 {
+    text-align: center;
+    margin-block-end: 30px;
+    color: #333;
+    font-weight: 600;
+}
+
+
+/* Style the form container */
+.form_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px; /* Adjust the gap between columns as needed */
+    max-width: 600px; /* Set a max-width to prevent the form from stretching too wide */
+    margin: 0 auto; /* Center the form on the page */
+}
+
+/* Style the form elements */
+.form_container label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form_container input,
+.form_container select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-container select {
+    /* Add specific styling for select fields if needed */
+}
+
+.form_container button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.form_container button:hover {
+    background-color: #FF9843;
+}
+
+/* Add additional styling as needed */
+
+
+@media (max-width: 600px) {
+    .form-container {
+        grid-template-columns: 1fr; /* Change to a single column for mobile mode */
+    }
+}

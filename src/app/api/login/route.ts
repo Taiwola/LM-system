@@ -24,11 +24,12 @@ export async function POST(req: Request) {
                 email: email,
                 password: password,
             }),
+            credentials: 'include' as RequestCredentials,
         };
 
         // Send the POST request to the backend
         const data = await fetch('http://localhost:8000/api/auth/signin', options);
-        console.log(data.status);
+
 
         // Check the response status
         if (data.status === 200) {
@@ -38,13 +39,13 @@ export async function POST(req: Request) {
             const message = response.message;
             const id = response.id;
 
-            console.log(id);
+
 
             // Return a successful response with the access token and message
             return NextResponse.json({success:true, message: message, accessToken, id: id });
         } else {
             // Handle an unsuccessful response
-            return NextResponse.json({false:false, message: "failed" });
+            return NextResponse.json({success:false, message: "failed" });
         }
     } catch (error) {
         // Handle any errors during the request

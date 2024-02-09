@@ -1,0 +1,61 @@
+.appr {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-inline: 10px;
+}
+
+.btn {
+    display: flex;
+    gap: 5px;
+}
+
+
+.btn button:nth-child(2) {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 6px 30px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn button:nth-child(1) {
+    background-color: #ce2727; /* Green */
+    border: none;
+    color: white;
+    padding: 6px 30px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+.cover_letter_link_container {
+    margin-top: 20px;
+  }
+  
+  .cover_letter_link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #bfccda; /* Change the color as desired */
+    color: #050505;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+   /* Hover effect */
+   .cover_letter_link:hover {
+    background-color: #0056b3; /* Change the hover color as desired */
+    color: #fff;
+  }
+  

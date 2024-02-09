@@ -3,6 +3,7 @@ import {ChangeEvent, useState, useEffect, FormEvent} from 'react';
 import styles from "../page.module.css";
 import RegisterForm from './registerForm';
 import { useRouter } from 'next/navigation';
+import { toast } from 'sonner';
 
 
 
@@ -43,10 +44,11 @@ export default function LoginForm() {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(data)
+            body: JSON.stringify(data),
+            credentials: 'include'
         });
-        console.log(res);
         const response: Response = await res.json();
+        toast.loading("loading");
         if (response.success === true) {
             const accessToken = response.accessToken;
             const id = response.id
@@ -59,8 +61,9 @@ export default function LoginForm() {
 
     }
   return (
-    <>
+      <>
     { showRegister ? <RegisterForm /> :<><form onSubmit={handleSubmit} method="post">
+            
               <div className={styles.form_control}>
                   <label htmlFor="email">Email</label>
                   <input
